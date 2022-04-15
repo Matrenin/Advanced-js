@@ -17,6 +17,10 @@ class ProductList {
         ];
     }
 
+    getSumPrice() {
+        return this._productsObjects.reduce((acc, el) => acc + el.price, 0);
+    }
+
     _render() {
         for (const product of this._goods) {
             const productObject = new ProductItem(product);
