@@ -6,6 +6,7 @@ class ProductList {
 
         this._fetchGoods();
         this._render();
+        this._calcAllPrice();
     }
 
     _fetchGoods() {
