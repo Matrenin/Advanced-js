@@ -1,0 +1,10 @@
+.myForm {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    border: 2px solid red;
+}
