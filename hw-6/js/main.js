@@ -1,18 +1,18 @@
-const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+let API = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses";
 
 const app = new Vue({
-    el: "#app",
+    el: '#app',
     data: {
-        userSearch: "",
+        userSearch: '',
     },
     methods: {
-        getJson(url) {
+        getJson(url){
             return fetch(url)
-                .then(response => response.json())
-                .catch(err => console.log(err));
+                .then(result => result.json())
+                .catch(error =>  console.log(error));
         },
     },
     mounted() {
         console.log(this);
-    },
+    }
 });
