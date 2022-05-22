@@ -1,0 +1,136 @@
+.cart {
+    display: flex;
+    position: relative;
+
+    & form {
+        display: flex;
+        align-items: center;
+
+        & input {
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            height: 24px;
+            font-size: 16px;
+            padding: 0 0 6px 12px;
+            width: 160px;
+            margin-right: 8px;
+        }
+    
+        & button {
+            border: none;
+            outline: none;
+            background: #000;
+        }
+    }
+
+    &__btn {
+        margin-left: 26px;
+        padding: 8px 20px;
+        color: #000;
+        border: none;
+        border-radius: 6px;
+        transition: .6s;
+
+        &:hover {
+            background: #F3E10B;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 50px;
+        right: -5px;
+        background: #fff;
+        border: 1px solid #000;
+        min-height: 100px;
+        width: 400px;
+        border-radius: 6px;
+        padding: 16px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-link {
+            margin-top: 12px;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid #F3E10B;
+            transition: .6s;
+
+            &:hover {
+                background: #FCF385;
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+
+    &-left {
+        display: flex;
+    }
+
+    &__desc {
+        margin-left: 12px;
+
+        &-name {
+            margin-top: 6px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        &-quantity {
+            margin-top: 8px;
+        }
+
+        &-price {
+            margin-top: 12px;
+
+            & span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-price{
+            margin-top: 16px;
+            font-size: 18px;
+        }
+
+        &-btn {
+            margin-top: 6px;
+            font-size: 16px;
+            padding: 8px 14px;
+            color: #fff;
+            background: #000;
+            border: none;
+            border-radius: 6px;
+        }
+    }
+
+    &-count {
+        position: absolute;
+        top: -20px;
+        right: -17px;
+        padding: 6px 10px;
+        background: red;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    }
+}
